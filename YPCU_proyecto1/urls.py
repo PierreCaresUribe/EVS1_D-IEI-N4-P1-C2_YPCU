@@ -17,9 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from YPCUApp1 import views as app1
+from YPCUApp2 import views as app2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('vista1/', app1.vista1),
     path('vista2/', app1.vista2),
+    path('vista3/', app2.vista3),
+    path('vista4/', app2.vista4),
 ]
