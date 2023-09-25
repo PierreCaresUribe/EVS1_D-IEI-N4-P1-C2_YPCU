@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from YPCUApp2 import views as app2
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('vista3/', app2.vista3),
+    path('vista4/', app2.vista4),
 ]
